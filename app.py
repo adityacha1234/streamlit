@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 
 # load databasedataset===================================
-sym_des = pd.read_csv("C:/Users/chaud/Desktop/PythonProject11/datasets/symtoms_df.csv")
+sym_des = pd.read_csv("symtoms_df.csv")
 
 
 # load model===========================================
