@@ -29,7 +29,7 @@ def get_predicted_value(user_symptoms):
             input_vector[symptoms_dict[item]] = 1
         return diseases_list[svc.predict([input_vector])[0]]
     except KeyError as e:
-        return f"Invalid symptom entered: {e}"
+        return f"Invalid Symptom: Please Try again"
 
 
 
