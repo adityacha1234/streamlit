@@ -57,9 +57,9 @@ def home():
             return render_template('index.html', predicted_disease=message)
         else :
             symptoms=symptoms.lower()
-            symptoms=(symptoms.replace(" ","_"))
-            user_symptoms = [s.strip() for s in symptoms.split(',')]
-
+            
+            user_symptoms = [s.strip().replace(" ", "_") for s in symptoms.split(',')]
+         
             user_symptoms = [symptom.strip("[]' ") for symptom in user_symptoms]
             predicted_disease = get_predicted_value(user_symptoms)
 
