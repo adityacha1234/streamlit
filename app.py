@@ -13,7 +13,7 @@ sym_des = pd.read_csv("symtoms_df.csv")
 
 
 # load model===========================================
-svc = pickle.load(open('svc.pkl','rb'))
+svc = pickle.load(open('best_model.pkl','rb'))
 
 
 #
